@@ -1,3 +1,13 @@
-h1 {
-  font-size: 1rem;
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, YuGothic, "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  cursor: default;
+}
+body {
+  height: 100%;
+  margin: 0;
 }

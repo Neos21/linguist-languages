@@ -1,0 +1,170 @@
+
+- name: Ant Build System
+  url : https://github.com/Neos21/legacy-of-ant
+- name: ApacheConf
+  url : https://github.com/Neos21/practice-apache-conf
+- name: AppleScript
+  url : https://github.com/Neos21/practice-applescript
+- name: Astro
+  url : https://github.com/Neos21/practice-astro
+- name: AutoHotkey
+  url : https://github.com/Neos21/practice-autohotkey
+- name: Awk
+  url : https://github.com/Neos21/practice-awk
+- name: Batchfile
+  url : https://github.com/Neos21/m3u8-to-mp4
+- name: Browserslist
+  url : https://github.com/Neos21/practice-browserslist
+- name: C
+  url : https://github.com/Neos21/c-cowsay
+- name: C++
+  url : https://github.com/Neos21/practice-cpp
+- name: C#
+  url : https://github.com/Neos21/poc-yukkuri-cli
+  originalExtends:
+    - name: Unity
+      url : https://github.com/Neos21/practice-unity-first-2d-game
+- name: Clojure
+  url : https://github.com/Neos21/practice-clojure
+- name: CMake
+  url : https://github.com/Neos21/practice-cmake
+- name: CoffeeScript
+  url : https://github.com/Neos21/practice-coffeescript
+- name: Common Lisp
+  url : https://github.com/Neos21/practice-common-lisp
+- name: CSS
+  url : https://github.com/Neos21/neos-normalize
+- name: CSV
+  url : https://github.com/Neos21/practice-csv
+- name: Dockerfile
+  url : https://github.com/Neos21/docker-oci-cli
+  originalExtends:
+    - name: Docker Compose
+      url : https://github.com/Neos21/practice-python-scraping
+- name: EJS
+  url : https://github.com/Neos21/practice-ejs
+- name: Go
+  url : https://github.com/Neos21/practice-go-lang
+- name: Gradle
+  url : https://github.com/Neos21/practice-gradle
+- name: Groovy
+  url : https://github.com/Neos21/practice-jenkins
+- name: Hack
+  url : https://github.com/Neos21/practice-hack
+- name: Haml
+  url : https://github.com/Neos21/practice-haml
+- name: Handlebars
+  url : https://github.com/Neos21/practice-handlebars
+- name: HCL
+  url : https://github.com/Neos21/boilerplate-terraform-private-oke-cluster-with-bastion
+- name: HTML
+  url : https://github.com/Neos21/webrtc-video-chat
+  originalExtends:
+    - name: HTA
+      url : https://github.com/Neos21/hta-memo
+- name: INI
+  url : https://github.com/Neos21/practice-git-attributes
+- name: Java
+  url : https://github.com/Neos21/practice-javafx-opencv
+- name: JavaScript
+  url : https://github.com/Neos21/req-cmd
+  originalExtends:
+    - name: Browser ECMAScript
+      url : https://github.com/Neos21/bookmarklets
+    - name: Node.js
+      url : https://github.com/Neos21/simple-notify
+    - name: Deno
+      url : https://github.com/Neos21/google-translator
+- name: JSON
+  url : https://github.com/Neos21/vscode-non-italic-monokai
+- name: Kotlin
+  url : https://github.com/Neos21/practice-kotlin
+- name: Less
+  url : https://github.com/Neos21/practice-less
+- name: Lua
+  url : https://github.com/Neos21/practice-lua
+- name: Makefile
+  url : https://github.com/Neos21/practice-makefile
+- name: Markdown
+  url : https://github.com/Neos21/neo.s21.xrea.com
+- name: Nginx
+  url : https://github.com/Neos21/practice-nginx-nodes-on-docker-compose
+- name: Perl
+  url : https://github.com/Neos21/practice-perl
+- name: PHP
+  url : https://github.com/Neos21/solilog
+- name: PlantUML
+  url : https://github.com/Neos21/practice-node-uml
+- name: PLSQL
+  url : https://github.com/Neos21/practice-pl-sql
+- name: PLpgSQL
+  url : https://github.com/Neos21/practice-pl-pg-sql
+- name: PowerShell
+  url : https://github.com/Neos21/simple-toast
+- name: Pug
+  url : https://github.com/Neos21/practice-pug
+- name: Python
+  url : https://github.com/Neos21/neos-python-note
+- name: Riot
+  url : https://github.com/Neos21/practice-riot
+- name: Ruby
+  url : https://github.com/Neos21/neos-ruby-bookmarks
+  originalExtends:
+    - name: Rails
+      url : https://github.com/Neos21/practice-dot-install-rails
+- name: Rust
+  url : https://github.com/Neos21/practice-wasm-rust
+- name: Sass
+  url : https://github.com/Neos21/dotfiles.github.com
+- name: SCSS
+  url : https://github.com/Neos21/bootstrap3-glyphicons
+- name: Scala
+  url : https://github.com/Neos21/practice-scala
+- name: Shell
+  url : https://github.com/Neos21/gh-contributions
+- name: Stylus
+  url : https://github.com/Neos21/practice-stylus
+- name: Svelte
+  url : https://github.com/Neos21/practice-svelte
+  originalExtends:
+    - name: Sapper
+      url : https://github.com/Neos21/practice-sapper
+- name: Swift
+  url : https://github.com/Neos21/multi-cam
+- name: TeX
+  url : https://github.com/Neos21/practice-latex
+- name: Text
+  url : https://github.com/Neos21/practice-detect-encoding
+- name: Twig
+  url : https://github.com/Neos21/practice-twig
+- name: TypeScript
+  url : https://github.com/Neos21/boilerplate-typescript-express
+  originalExtends:
+    - name: Angular
+      url : https://github.com/Neos21/angular-utilities
+    - name: React
+      url : https://github.com/Neos21/nemui-gacha-js
+- name: VBA
+  url : https://github.com/Neos21/open-excel-with-password-vba
+- name: VBScript
+  url : https://github.com/Neos21/unlock-excel-book-password
+- name: Velocity Template Language
+  url : https://github.com/Neos21/practice-velocity
+- name: Visual Basic .NET
+  url : https://github.com/Neos21/practice-vb-dotnet
+- name: Vim Script
+  url : https://github.com/Neos21/practice-vim-script
+- name: Vue
+  url : https://github.com/Neos21/list-repos
+- name: Zig
+  url : https://github.com/Neos21/practice-zig
+- name: jq
+  url : https://github.com/Neos21/practice-jq
+- name: sed
+  url : https://github.com/Neos21/practice-sed
+- isOriginal: true
+  name: Algol 68 Genie
+  url : https://github.com/Neos21/practice-algol-68-genie
+- isOriginal: true
+  name: Excel
+  url : https://github.com/Neos21/document-templates

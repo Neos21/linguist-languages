@@ -1,3 +1,67 @@
-h1 {
-  color: #f00;
+/* https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors */
+
+.app-component {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  padding-right: 1rem;
+  padding-left : 1rem;
+}
+
+header,
+footer {
+  color: #fff;
+  white-space: nowrap;
+  background: #ff0266;
+}
+header a, footer a {
+  color: inherit;
+  text-decoration: none;;
+}
+header a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding-top   : 1.2rem;
+  padding-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+main {
+  flex: 1;
+  padding-top   : 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.loading {
+  color: #fbc02d;
+  font-weight: bold;
+}
+.info {
+  color: #0091ea;
+  font-weight: bold;
+}
+
+.language-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(140, 140, 140, .3);
+  border-radius: 50%;
+  margin-right: .5rem;
+  margin-left : .2rem;
+}
+
+footer {
+  padding-top   : 2rem;
+  padding-bottom: 2rem;
+  text-align: right;
 }
