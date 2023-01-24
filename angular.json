@@ -26,7 +26,7 @@
             "polyfills": [
               "zone.js"
             ],
-            "outputPath": "dist",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "assets": [

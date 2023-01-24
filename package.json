@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0 --disable-host-check",
-    "build": "ng build --base-href=."
+    "build": "ng build --base-href=. && rm -f ./docs/3rdpartylicenses.txt",
+    "fetch": "node ./scripts/fetch-languages-yaml.js",
+    "sync" : "node ./scripts/sync-assets.js",
+    "sirv" : "npx sirv-cli . --host=0.0.0.0"
   },
   "dependencies": {
     "@angular/animations": "15.1.1",

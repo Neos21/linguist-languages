@@ -1,55 +1,89 @@
 <div class="app-component">
 
-<header>Linguist Languages</header>
+<header><a href="#">Linguist Languages</a></header>
 
 <main>
-  <div class="loading" *ngIf="isLoading">Loading...</div>
-  <ng-container *ngIf="!isLoading">
-    <div class="info" *ngIf="languages == null || languages.length === 0">表示できるものはありません。</div>
+  <div class="loading" *ngIf="isLoading && !errorMessage">
+    Loading...
+  </div>
+  
+  <div class="error" *ngIf="!isLoading && errorMessage">
+    {{ errorMessage }}
+  </div>
+  
+  <ng-container *ngIf="!isLoading && !errorMessage">
+    <div class="info" *ngIf="languages == null || languages.length === 0">
+      表示できるものはありません。
+    </div>
     
-    <ul>
-      <li>言語総数 : {{ countAllLanguages }} (うちグループ子要素除外 : {{ countGroupLanguages }})</li>
-      <li>習得済言語数 : {{ countLearnedLanguages }} (うち独自言語数 : {{ countOriginalLanguages }})</li>
-    </ul>
-    
-    <ol *ngIf="languages != null && languages.length > 0">
-      <li *ngFor="let language of languages">
-        <span class="language-icon" [ngStyle]="{ 'background': language.colour ?? 'transparent' }"></span>
-        <span class="language-name">
-          <ng-container *ngIf="language.url != null; else notYet">
-            <a [href]="language.url" target="_blank">{{ language.name }}</a>
-          </ng-container>
-          <ng-template #notYet>
-            <span>{{ language.name }}</span>
-          </ng-template>
-        </span>
-        <span *ngIf="language.isOriginal">&nbsp;(Original)</span>
-        <ng-container *ngIf="language.originalExtends != null">
-          <span>&nbsp;:</span>
-          <span *ngFor="let extendsLanguage of language.originalExtends">&nbsp;<a [href]="extendsLanguage.url" target="_blank">{{ extendsLanguage.name }}</a></span>
-        </ng-container>
+    <ng-container *ngIf="languages != null && languages.length > 0">
+      <p>
+        <button type="button" class="button-toggle" (click)="toggleLanguages()">
+          <span>{{ isShownAllLanguages ? 'グループ別一覧' : '全言語一覧' }}</span>
+        </button>
+      </p>
+      
+      <ul>
+        <li>言語総数 : {{ countAllLanguages }} (うちグループ子要素除外 : {{ countGroupLanguages }})</li>
+        <li>習得済言語数 : {{ countLearnedLanguages }} (うち独自言語 : {{ countOriginalLanguages }})</li>
+        <li>トータル言語数 : {{ countGroupLanguages! + countOriginalLanguages! }}</li>
+        <li *ngFor="let languageInfo of languages; let i = index"><a [href]="'#language-' + i">{{ languageInfo.title }} : {{ languageInfo.languages.length }}</a></li>
+      </ul>
+      
+      <section *ngFor="let languageInfo of languages; let i = index" [id]="'language-' + i">
+        <h1>{{ languageInfo.title }} : {{ languageInfo.languages.length }}</h1>
         
-        <ol *ngIf="language.groupLanguages != null">
-          <li *ngFor="let groupLanguage of language.groupLanguages">
-            <span class="language-icon" [ngStyle]="{ 'background': groupLanguage.colour }"></span>
+        <div class="info" *ngIf="languageInfo.languages.length === 0">
+          表示できるものはありません。
+        </div>
+        
+        <ol *ngIf="languageInfo.languages.length > 0">
+          <li *ngFor="let language of languageInfo.languages">
+            <span class="language-icon" [ngStyle]="{ 'background': language.colour ?? '#f0f0f0' }"></span>
+            
             <span class="language-name">
-              <ng-template *ngIf="groupLanguage.url != null; else notYet">
-                <a [href]="groupLanguage.url" target="_blank">{{ groupLanguage.name }}</a>
-              </ng-template>
+              <ng-container *ngIf="language.url != null; else notYet">
+                <a [href]="language.url" target="_blank">{{ language.name }}</a>
+              </ng-container>
               <ng-template #notYet>
-                <span>{{ groupLanguage.name }}</span>
+                <span>{{ language.name }}</span>
               </ng-template>
             </span>
+            
+            <span *ngIf="language.isOriginal">&nbsp;(Original)</span>
+            <ng-container *ngIf="language.originalExtends != null">
+              <span>&nbsp;:</span>
+              <span *ngFor="let extendsLanguage of language.originalExtends">&nbsp;<a [href]="extendsLanguage.url" target="_blank">{{ extendsLanguage.name }}</a></span>
+            </ng-container>
+            
+            <!-- グループ -->
+            <ol *ngIf="language.groupLanguages != null">
+              <li *ngFor="let groupLanguage of language.groupLanguages">
+                <span class="language-icon" [ngStyle]="{ 'background': groupLanguage.colour ?? '#f0f0f0' }"></span>
+                
+                <span class="language-name">
+                  <ng-template *ngIf="groupLanguage.url != null; else notYet">
+                    <a [href]="groupLanguage.url" target="_blank">{{ groupLanguage.name }}</a>
+                  </ng-template>
+                  <ng-template #notYet>
+                    <span>{{ groupLanguage.name }}</span>
+                  </ng-template>
+                </span>
+              </li>
+            </ol>
           </li>
         </ol>
-      
-      </li>
-    </ol>
+      </section>
+    </ng-container>
   </ng-container>
 </main>
 
 <footer>
-  Footer
+  <ul>
+    <li><a href="https://github.com/Neos21/linguist-languages" target="_blank">Repo</a></li>
+    <li><a href="https://github.com/Neos21" target="_blank">GitHub</a></li>
+    <li><a href="https://neos21.net/" target="_blank">Neo's World</a></li>
+  </ul>
 </footer>
 
 </div>

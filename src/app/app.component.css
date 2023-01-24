@@ -28,16 +28,17 @@ header a:hover, footer a:hover {
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  padding-top   : 1.2rem;
-  padding-bottom: 1.2rem;
+  width: 100%;
+  height: calc(1.2rem * 3);
   font-size: 1.2rem;
+  line-height: calc(1.2rem * 3);
 }
 
 main {
   flex: 1;
-  padding-top   : 1.2rem;
+  padding-top   : calc(1.2rem * 3 + 1.2rem);
   padding-bottom: 1.2rem;
 }
 
@@ -45,16 +46,52 @@ main {
   color: #fbc02d;
   font-weight: bold;
 }
+.error {
+  color: #e53935;
+  font-weight: bold;
+}
 .info {
   color: #0091ea;
   font-weight: bold;
 }
 
+.button-toggle {
+  border: 0;
+  border-radius: 4px;
+  padding: 0;
+  color: #fff;
+  white-space: nowrap;
+  background: #ff0266;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  cursor: pointer;
+}
+.button-toggle span {
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+.button-toggle:hover {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+.button-toggle:hover span {
+  background: rgba(255, 255, 255, .04);
+}
+.button-toggle:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+.button-toggle:active span {
+  background: rgba(255, 255, 255, .12);
+}
+
+section {
+  scroll-margin-top: calc(1.2rem * 3 + 1rem);
+}
+h1, p, ul, ol {
+  margin-top: 0;
+}
 .language-icon {
   display: inline-block;
   width: 12px;
   height: 12px;
-  border: 1px solid rgba(140, 140, 140, .3);
   border-radius: 50%;
   margin-right: .5rem;
   margin-left : .2rem;
@@ -64,4 +101,16 @@ footer {
   padding-top   : 2rem;
   padding-bottom: 2rem;
   text-align: right;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer li {
+  display: inline;
+}
+footer li:not(:last-child)::after {
+  display: inline;
+  content: " | ";
 }

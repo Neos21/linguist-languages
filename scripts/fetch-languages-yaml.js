@@ -24,7 +24,7 @@ const request = (url) => new Promise((resolve, reject) => {
 });
 
 (async () => {
-  console.log('Get Languages YAML');
+  console.log('Fetch Languages YAML');
   
   const yaml = await request(languagesYamlUrl);
   await fs.writeFile(languagesYamlFilePath, yaml, 'utf8');
