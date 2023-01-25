@@ -1,6 +1,13 @@
 <div class="app-component">
 
-<header><a href="#">Linguist Languages</a></header>
+<header>
+  <div><a href="#">Linguist Languages</a></div>
+  <ul>
+    <li><a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">YAML</a></li>
+    <li><a href="https://neos21.github.io/list-repos/?user=Neos21" target="_blank">List</a></li>
+    <li><a href="https://github.com/Neos21?tab=repositories" target="_blank">Repos</a></li>
+  </ul>
+</header>
 
 <main>
   <div class="loading" *ngIf="isLoading && !errorMessage">

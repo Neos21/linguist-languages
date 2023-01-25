@@ -16,7 +16,6 @@ footer {
 header,
 footer {
   color: #fff;
-  white-space: nowrap;
   background: #ff0266;
 }
 header a, footer a {
@@ -26,20 +25,41 @@ header a, footer a {
 header a:hover, footer a:hover {
   text-decoration: underline;
 }
+header ul, footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header li, footer li {
+  display: inline-block;
+  white-space: nowrap;
+}
+header  li:not(:last-child)::after, footer li:not(:last-child)::after {
+  display: inline;
+  content: "\00a0|\00a0";
+  white-space: nowrap;
+}
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
   height: calc(1.2rem * 3);
-  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  white-space: nowrap;
   line-height: calc(1.2rem * 3);
+}
+header div {
+  font-size: 1.2rem;
+}
+header ul {
+  text-align: right;
 }
 
 main {
-  flex: 1;
   padding-top   : calc(1.2rem * 3 + 1.2rem);
-  padding-bottom: 1.2rem;
+  padding-bottom: calc(1.2rem * 3 + 1.2rem);
 }
 
 .loading {
@@ -98,19 +118,10 @@ h1, p, ul, ol {
 }
 
 footer {
-  padding-top   : 2rem;
-  padding-bottom: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: calc(1rem * 3);
   text-align: right;
-}
-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-footer li {
-  display: inline;
-}
-footer li:not(:last-child)::after {
-  display: inline;
-  content: " | ";
+  line-height: calc(1rem * 3);
 }
