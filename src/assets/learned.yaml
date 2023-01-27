@@ -12,6 +12,8 @@
   url : https://github.com/Neos21/practice-awk
 - name: Batchfile
   url : https://github.com/Neos21/m3u8-to-mp4
+- name: Brainfuck
+  url : https://github.com/Neos21/practice-brainfuck
 - name: Browserslist
   url : https://github.com/Neos21/practice-browserslist
 - name: C
@@ -27,6 +29,8 @@
   url : https://github.com/Neos21/practice-clojure
 - name: CMake
   url : https://github.com/Neos21/practice-cmake
+- name: COBOL
+  url : https://github.com/Neos21/practice-cobol
 - name: CoffeeScript
   url : https://github.com/Neos21/practice-coffeescript
 - name: Common Lisp
@@ -88,6 +92,8 @@
   url : https://github.com/Neos21/neo.s21.xrea.com
 - name: Nginx
   url : https://github.com/Neos21/practice-nginx-nodes-on-docker-compose
+- name: Pascal
+  url : https://github.com/Neos21/practice-pascal
 - name: Perl
   url : https://github.com/Neos21/practice-perl
 - name: PHP
@@ -121,6 +127,8 @@
   url : https://github.com/Neos21/practice-scala
 - name: Shell
   url : https://github.com/Neos21/gh-contributions
+- name: SQL
+  url : https://github.com/Neos21/practice-sql
 - name: Stylus
   url : https://github.com/Neos21/practice-stylus
 - name: Svelte
