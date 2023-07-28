@@ -1,15 +1,21 @@
+- name: ActionScript
+  url : https://github.com/Neos21/practice-actionscript
 - name: Ant Build System
   url : https://github.com/Neos21/legacy-of-ant
 - name: ApacheConf
   url : https://github.com/Neos21/practice-apache-conf
 - name: AppleScript
   url : https://github.com/Neos21/practice-applescript
+- name: ASP.NET
+  url : https://github.com/Neos21/practice-asp-net
 - name: Astro
   url : https://github.com/Neos21/practice-astro
 - name: AutoHotkey
   url : https://github.com/Neos21/practice-autohotkey
 - name: Awk
   url : https://github.com/Neos21/practice-awk
+- name: BASIC
+  url : https://github.com/Neos21/practice-basic
 - name: Batchfile
   url : https://github.com/Neos21/m3u8-to-mp4
 - name: Brainfuck
@@ -35,6 +41,8 @@
   url : https://github.com/Neos21/practice-coffeescript
 - name: Common Lisp
   url : https://github.com/Neos21/practice-common-lisp
+- name: CSON
+  url : https://github.com/Neos21/practice-cson
 - name: CSS
   url : https://github.com/Neos21/neos-normalize
 - name: CSV
@@ -48,10 +56,18 @@
       url : https://github.com/Neos21/practice-python-scraping
 - name: EJS
   url : https://github.com/Neos21/practice-ejs
+- name: Emacs Lisp
+  url : https://github.com/Neos21/practice-emacs-lisp
+- name: Fortran
+  url : https://github.com/Neos21/practice-fortran
 - name: Go
   url : https://github.com/Neos21/practice-go-lang
 - name: Gradle
   url : https://github.com/Neos21/practice-gradle
+- name: GraphQL
+  url : https://github.com/Neos21/practice-graphql
+- name: Graphviz (DOT)
+  url : https://github.com/Neos21/practice-graphviz
 - name: Groovy
   url : https://github.com/Neos21/practice-jenkins
 - name: Hack
@@ -60,6 +76,8 @@
   url : https://github.com/Neos21/practice-haml
 - name: Handlebars
   url : https://github.com/Neos21/practice-handlebars
+- name: Haskell
+  url : https://github.com/Neos21/practice-haskell
 - name: HCL
   url : https://github.com/Neos21/boilerplate-terraform-private-oke-cluster-with-bastion
 - name: HTML
