@@ -1,5 +1,5 @@
 const fs   = require('node:fs').promises;
-const path = require('path');
+const path = require('node:path');
 
 const srcAssetsDirectoryPath = path.resolve(__dirname, '../src/assets');
 const dstAssetsDirectoryPath = path.resolve(__dirname, '../docs/assets');

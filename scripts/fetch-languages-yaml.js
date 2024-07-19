@@ -1,6 +1,6 @@
 const fs    = require('node:fs').promises;
 const https = require('node:https');
-const path  = require('path');
+const path  = require('node:path');
 
 const languagesYamlUrl = 'https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml';
 const languagesYamlFilePath = path.resolve(__dirname, '../src/assets/languages.yaml');
