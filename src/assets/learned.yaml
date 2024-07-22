@@ -6,6 +6,8 @@
   url : https://github.com/Neos21/practice-apache-conf
 - name: AppleScript
   url : https://github.com/Neos21/practice-applescript
+- name: AsciiDoc
+  url : https://github.com/Neos21/practice-asciidoc
 - name: ASP.NET
   url : https://github.com/Neos21/practice-asp-net
 - name: Astro
@@ -112,6 +114,8 @@
   url : https://github.com/Neos21/neo.s21.xrea.com
 - name: Nginx
   url : https://github.com/Neos21/practice-nginx-nodes-on-docker-compose
+- name: Nim
+  url : https://github.com/Neos21/practice-nim
 - name: Pascal
   url : https://github.com/Neos21/practice-pascal
 - name: Perl
