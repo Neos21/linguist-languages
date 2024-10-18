@@ -58,8 +58,12 @@
       url : https://github.com/Neos21/practice-python-scraping
 - name: EJS
   url : https://github.com/Neos21/practice-ejs
+- name: Elixir
+  url : https://github.com/Neos21/practice-elixir
 - name: Emacs Lisp
   url : https://github.com/Neos21/practice-emacs-lisp
+- name: Erlang
+  url : https://github.com/Neos21/practice-erlang
 - name: Fortran
   url : https://github.com/Neos21/practice-fortran
 - name: Go
@@ -102,6 +106,8 @@
       url : https://github.com/Neos21/google-translator
 - name: JSON
   url : https://github.com/Neos21/vscode-non-italic-monokai
+- name: JSON5
+  url : https://github.com/Neos21/practice-json5
 - name: Kotlin
   url : https://github.com/Neos21/practice-kotlin
 - name: Less
@@ -112,10 +118,14 @@
   url : https://github.com/Neos21/practice-makefile
 - name: Markdown
   url : https://github.com/Neos21/neo.s21.xrea.com
+- name: MDX
+  url : https://github.com/Neos21/practice-mdx
 - name: Nginx
   url : https://github.com/Neos21/practice-nginx-nodes-on-docker-compose
 - name: Nim
   url : https://github.com/Neos21/practice-nim
+- name: OCaml
+  url : https://github.com/Neos21/practice-ocaml
 - name: Pascal
   url : https://github.com/Neos21/practice-pascal
 - name: Perl
