@@ -30,7 +30,6 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [

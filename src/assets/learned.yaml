@@ -20,6 +20,8 @@
   url : https://github.com/Neos21/practice-basic
 - name: Batchfile
   url : https://github.com/Neos21/m3u8-to-mp4
+- name: Bicep
+  url : https://github.com/Neos21/practice-bicep
 - name: Brainfuck
   url : https://github.com/Neos21/practice-brainfuck
 - name: Browserslist
@@ -120,6 +122,8 @@
   url : https://github.com/Neos21/neo.s21.xrea.com
 - name: MDX
   url : https://github.com/Neos21/practice-mdx
+- name: Mustache
+  url : https://github.com/Neos21/practice-mustache
 - name: Nginx
   url : https://github.com/Neos21/practice-nginx-nodes-on-docker-compose
 - name: Nim
@@ -161,6 +165,8 @@
   url : https://github.com/Neos21/practice-scala
 - name: Shell
   url : https://github.com/Neos21/gh-contributions
+- name: Smarty
+  url : https://github.com/Neos21/practice-smarty
 - name: SQL
   url : https://github.com/Neos21/practice-sql
 - name: Stylus
